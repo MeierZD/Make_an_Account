@@ -1,0 +1,10 @@
+# Make an Account 
+# Used to make an account
+# Written by Meier Z. Duff
+
+print("Please fill in all informastion.")
+name = input("Name(first and last): ")
+age = int(input("Age: "))
+email = int("Email: ")
+
+print("Write a password, that has eight digents, three numbers and one simble.")
