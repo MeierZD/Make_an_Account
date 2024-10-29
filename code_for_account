@@ -2,9 +2,24 @@
 # Used to make an account
 # Written by Meier Z. Duff
 
+from pickle import FALSE
+
+
 print("Please fill in all informastion.")
 name = input("Name(first and last): ")
 age = int(input("Age: "))
 email = int("Email: ")
 
-print("Write a password, that has eight digents, three numbers and one simble.")
+print("Write a password, that has eight digents, three of which are numbers and one of which is a symble.")
+
+pa = 0
+
+while pa =! 3
+    password = int(input("Password: "))
+    if password.length ==  8:
+        pa == pa + 1
+    else: 
+        print("Password is not long enuogh. Enter new passwords.")
+    if password 
+
+
