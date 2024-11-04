@@ -8,38 +8,31 @@ from pickle import FALSE
 print("Please fill in all informastion.")
 name = input("Name(first and last): ")
 age = int(input("Age: "))
-email = int(input("Email: ")
+email = input("Email: ")
 
-print("Write a password, that has eight digents, three of which are numbers and one of which is a symble(+,@,%, or *).")
+print("Write a password, that has eight digents, three of which are numbers.")
 
 pa = 0
 letterCount=0
 numberCount=0
 
 
-while pa != 3:
-    password = int(input("Password: "))
+while pa != 2:
+    password = input("Password: ")
 
-    if password.length ==  8:
-        pa == pa + 1
+    if len(password) ==  8:
+        pa = pa + 1
     else: 
-        print("Password is not long enuogh. Enter new passwords.")
+        print("Password is not long enough. Enter new passwords.")
 
     for i in password:
         if i.isdigit():
             letterCount +=1
-            print("Is a letter!")
         else:
             numberCount +=1
-            print("Is NOT a letter!")
-    if letterCount == 3:
-        pa == pa + 1 
-        
-    else: 
-        print("Password does not contale enough numbers. Enter new passwords.")
-
-    if password.isdigit():
-            pa == pa + 1 
+    if letterCount >= 3:
+        pa = pa + 1    
+   
     else: 
         print("Password does not contale a symble. Enter new passwords.")
 
